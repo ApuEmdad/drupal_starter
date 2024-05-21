@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "drush clear cache",
+      "type": "shell",
+      "command": ".\\vendor\\bin\\drush cr",
+      "problemMatcher": []
+    }
+  ]
+}

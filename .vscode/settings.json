@@ -1,0 +1,16 @@
+{
+  "git.ignoreLimitWarning": true,
+  "files.autoSave": "off",
+  "files.autoSaveDelay": 1000,
+  "editor.formatOnSave": true,
+  "triggerTaskOnSave.tasks": {
+    "drush clear cache": ["**/*"]
+  },
+  "liveServer.settings.port": 5501,
+  "files.associations": {
+    "*.html": "twig"
+  },
+  "emmet.includeLanguages": {
+    "twig": "html"
+  }
+}

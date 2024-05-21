@@ -1,0 +1,16 @@
+# File: tiny_ant.info.yml
+name: "Tiny Dash"
+type: theme
+description: "Tiny ants had tasty dish in Shady Sands"
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+base theme: false
+libraries:
+  - tiny_dash/global-styling
+regions:
+  header: "Header"
+  banner: "Banner"
+  slider: "Slider"
+  sidebar: "Sidebar"
+  content: "Content"
+  footer: "Footer"

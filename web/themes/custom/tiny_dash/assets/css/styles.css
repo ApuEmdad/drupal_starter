@@ -1,0 +1,62 @@
+:root {
+  --bs-white-rgb: 255, 255, 255;
+  /* Redefine the Bootstrap white color */
+  --bs-body-color: #212529;
+  --bs-danger-rgb: 220, 53, 69;
+}
+
+.bz-slider-icon {
+  background-color: rgba(155, 24, 24, 0.2);
+  border-radius: 25%;
+}
+
+.size-of-icons {
+  width: 20px;
+}
+
+.banner {
+  width: 100%;
+  min-height: 60vh;
+  /* background-image: linear-gradient(-90deg, rgba(173, 173, 173, 0.01), rgb(107, 76, 76)), url('../../images/banner.jpg'); */
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.colors div {
+  /* width: 20px;
+    height: 20px;
+    border-radius: 50%; */
+}
+
+.variations span {
+  border: 1px solid gray;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.variations span:hover {
+  background-color: gray;
+  color: white;
+  transition: ease-in-out;
+  transition-delay: 100ms;
+}
+
+.footer {
+  margin-top: 60px;
+  background-color: rgb(255, 185, 185);
+  padding: 32px 0px;
+}
+
+.footer nav > a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-white {
+  color: #fff !important;
+}
