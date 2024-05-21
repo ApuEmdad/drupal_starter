@@ -1,14 +1,22 @@
 {
   "scripts": {
-    "prettier": "prettier --ignore-path .gitignore --write \"./web/**/*.+(js|jsx|ts|tsx|json|css|html|html.twig)\""
+    "prettier": "prettier --ignore-path .gitignore --write"
   },
-  "Thusky": {
+  "husky": {
     "hooks": {
-      "pre-commit": "yarn prettier"
+      "pre-commit": "lint-staged"
     }
   },
+  "lint-staged": {
+    "./web/**/*.{js,jsx,ts,tsx,json,css,html,twig,php}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
-    "husky": "4",
-    "prettier": "^3.2.5"
+    "husky": "^4.0.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.3.2",
+    "prettier-plugin-twig-melody": "^0.4.6"
   }
 }
