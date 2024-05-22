@@ -41,6 +41,7 @@
 /.gitattributes
 composer.lock
 yarn.lock
+package.lock
 
 node_modules
 /node_modules
