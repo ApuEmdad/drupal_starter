@@ -2,21 +2,10 @@
   "scripts": {
     "prettier": "prettier --ignore-path .gitignore --write"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "./web/**/*.{js,jsx,ts,tsx,json,css,html,twig,php}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "devDependencies": {
     "husky": "^4.0.0",
     "lint-staged": "^13.0.3",
-    "prettier": "2.3.2",
+    "prettier": "2.5",
     "prettier-plugin-twig-melody": "^0.4.6"
   }
 }

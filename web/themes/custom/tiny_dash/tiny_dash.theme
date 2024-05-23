@@ -1,1 +1,12 @@
 <?php
+
+/**
+ * Implements hook_preprocess_views_view().
+ */
+function tiny_dash_preprocess_views_view(&$variables)
+{
+  if ($variables['view']->id() == 'featured_bike') {
+    dump($variables);
+    $variables['attributes']['class'][] = 'row g-4 mt-3';
+  }
+}
