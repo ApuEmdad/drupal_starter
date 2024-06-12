@@ -12,5 +12,6 @@
   },
   "emmet.includeLanguages": {
     "twig": "html"
-  }
+  },
+  "editor.fontSize": 15
 }

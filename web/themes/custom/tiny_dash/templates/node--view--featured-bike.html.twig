@@ -6,8 +6,9 @@
 	<img src="{{image_url}}" class="card-img-top" alt="...">
 	<div class="card-body">
 		<h5 class="card-title">{{content.field_bike_name}}</h5>
-		{# <p class="card-text">{{content.field_car_description}}</p> #}
-		<p class="card-text">{{content.field_bike_description}}</p>
+
+		{# <p class="card-text">{{content.field_bike_description}}</p> #}
+		<p class="card-text">{{bike_description_trimmed}}</p>
 
 		<div>
 			<div class="colors d-flex gap-2 align-items-center">
@@ -24,7 +25,7 @@
 		<div class="installment">
 			<p>{{content.field_installment}}</p>
 		</div>
-		<a href="details.html" class="btn btn-outline-danger">View Details</a>
+		<a href="{{ node_url }}" class="btn btn-outline-danger">View Details</a>
 
 
 	</div>
