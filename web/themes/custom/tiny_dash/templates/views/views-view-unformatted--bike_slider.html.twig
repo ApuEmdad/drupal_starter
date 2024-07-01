@@ -1,0 +1,39 @@
+{{dump(rows)}}
+<!-- ==========Carousel============ -->
+<!-- ==========Carousel============ -->
+	<div id="carouselExample" class="carousel slide" data-bs-ride="carousel"> <div class="carousel-inner mt-5 p-5 bg-danger bg-opacity-10 rounded">
+
+
+		{% for row in rows %}
+			<div class="carousel-item active">
+				<div class="row">
+					<div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-center">
+						<div>
+							<h1>{{row.content.field_slider_title}}</h1>
+							<p>
+								{{row.content.field_slider_sub_title}}
+							</p>
+							<a href="details.html" class="btn btn-danger">View Details</a>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-6">
+						{% if row.content.field_slider_image %}
+							{% set image_url =file_url(row.content.field_slider_image['#items'].entity.uri.value) %}
+						{% endif %}
+						<img src="{{image_url}}" class="d-block w-100" alt="...">
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+
+
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon bz-slider-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+		<span class="carousel-control-next-icon bz-slider-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+</div>
